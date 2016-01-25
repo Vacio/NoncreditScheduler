@@ -189,7 +189,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="constants.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="noncredit.h" />
     <ClInclude Include="NoncreditSorter.h" />
     <ClInclude Include="NoncreditSorterDoc.h" />
     <ClInclude Include="NoncreditSorterView.h" />
@@ -199,6 +201,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="noncredit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="NoncreditSorter.cpp" />
     <ClCompile Include="NoncreditSorterDoc.cpp" />
     <ClCompile Include="NoncreditSorterView.cpp" />
